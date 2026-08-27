@@ -1,0 +1,142 @@
+Hello World
+25695A3710@1769-1CSLAB45 MINGW64 /z/Project
+$ ls -l
+total 4
+-rw-r--r-- 1 25695A3710 1049089 11 Aug 27 12:18 'Hello World.txt'
+
+25695A3710@1769-1CSLAB45 MINGW64 /z/Project
+$ git
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   restore    Restore working tree files
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   diff       Show changes between commits, commit and working tree, etc
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   backfill   Download missing objects in a partial clone
+   branch     List, create, or delete branches
+   commit     Record changes to the repository
+   history    EXPERIMENTAL: Rewrite history
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   reset      Set `HEAD` or the index to a known state
+   switch     Switch branches
+   tag        Create, list, delete or verify tags
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+25695A3710@1769-1CSLAB45 MINGW64 /z/Project
+$ git --version
+git version 2.55.0.windows.5
+
+25695A3710@1769-1CSLAB45 MINGW64 /z/Project
+$ git add
+fatal: not a git repository (or any of the parent directories): .git
+
+25695A3710@1769-1CSLAB45 MINGW64 /z/Project
+$ ls -la
+total 4
+drwxr-xr-x 1 25695A3710 1049089  0 Aug 27 12:18  ./
+drwxr-xr-x 1 25695A3710 1049089  0 Aug 27 12:15  ../
+-rw-r--r-- 1 25695A3710 1049089 11 Aug 27 12:18 'Hello World.txt'
+
+25695A3710@1769-1CSLAB45 MINGW64 /z/Project
+$ git init
+Initialized empty Git repository in //mdc02/StudentsData/BTech/2024-2027/CSC/25695A3710/Project/.git/
+
+25695A3710@1769-1CSLAB45 MINGW64 /z/Project
+$ ls -la
+total 4
+drwxr-xr-x 1 25695A3710 1049089  0 Aug 27 12:23  ./
+drwxr-xr-x 1 25695A3710 1049089  0 Aug 27 12:15  ../
+drwxr-xr-x 1 25695A3710 1049089  0 Aug 27 12:23  .git/
+-rw-r--r-- 1 25695A3710 1049089 11 Aug 27 12:18 'Hello World.txt'
+
+25695A3710@1769-1CSLAB45 MINGW64 /z/Project
+$ cd .git
+
+25695A3710@1769-1CSLAB45 MINGW64 /z/Project/.git
+$ ls -lrt
+total 9
+-rw-r--r-- 1 25695A3710 1049089  73 Aug 27 12:23 description
+drwxr-xr-x 1 25695A3710 1049089   0 Aug 27 12:23 hooks/
+drwxr-xr-x 1 25695A3710 1049089   0 Aug 27 12:23 info/
+-rw-r--r-- 1 25695A3710 1049089 130 Aug 27 12:23 config
+drwxr-xr-x 1 25695A3710 1049089   0 Aug 27 12:23 refs/
+-rw-r--r-- 1 25695A3710 1049089  23 Aug 27 12:23 HEAD
+drwxr-xr-x 1 25695A3710 1049089   0 Aug 27 12:23 objects/
+
+25695A3710@1769-1CSLAB45 MINGW64 /z/Project/.git
+$ cd ..
+
+25695A3710@1769-1CSLAB45 MINGW64 /z/Project
+$ git status
+fatal: detected dubious ownership in repository at '//mdc02/StudentsData/BTech/2024-2027/CSC/25695A3710/Project'
+'//mdc02/StudentsData/BTech/2024-2027/CSC/25695A3710/Project' may refer to a non-local directory
+To add an exception for this directory, call:
+
+        git config --global --add safe.directory '%(prefix)///mdc02/StudentsData/BTech/2024-2027/CSC/25695A3710/Project'
+
+25695A3710@1769-1CSLAB45 MINGW64 /z/Project
+$ git status on branch master
+fatal: detected dubious ownership in repository at '//mdc02/StudentsData/BTech/2024-2027/CSC/25695A3710/Project'
+'//mdc02/StudentsData/BTech/2024-2027/CSC/25695A3710/Project' may refer to a non-local directory
+To add an exception for this directory, call:
+
+        git config --global --add safe.directory '%(prefix)///mdc02/StudentsData/BTech/2024-2027/CSC/25695A3710/Project'
+
+25695A3710@1769-1CSLAB45 MINGW64 /z/Project
+$ git status On branch master
+fatal: detected dubious ownership in repository at '//mdc02/StudentsData/BTech/2024-2027/CSC/25695A3710/Project'
+'//mdc02/StudentsData/BTech/2024-2027/CSC/25695A3710/Project' may refer to a non-local directory
+To add an exception for this directory, call:
+
+        git config --global --add safe.directory '%(prefix)///mdc02/StudentsData/BTech/2024-2027/CSC/25695A3710/Project'
+
+25695A3710@1769-1CSLAB45 MINGW64 /z/Project
+$ git add .
+fatal: detected dubious ownership in repository at '//mdc02/StudentsData/BTech/2024-2027/CSC/25695A3710/Project'
+'//mdc02/StudentsData/BTech/2024-2027/CSC/25695A3710/Project' may refer to a non-local directory
+To add an exception for this directory, call:
+
+        git config --global --add safe.directory '%(prefix)///mdc02/StudentsData/BTech/2024-2027/CSC/25695A3710/Project'
+
+25695A3710@1769-1CSLAB45 MINGW64 /z/Project
+$ git commit -m "Development"
+fatal: detected dubious ownership in repository at '//mdc02/StudentsData/BTech/2024-2027/CSC/25695A3710/Project'
+'//mdc02/StudentsData/BTech/2024-2027/CSC/25695A3710/Project' may refer to a non-local directory
+To add an exception for this directory, call:
+
+        git config --global --add safe.directory '%(prefix)///mdc02/StudentsData/BTech/2024-2027/CSC/25695A3710/Project'
+
+25695A3710@1769-1CSLAB45 MINGW64 /z/Project
+$
